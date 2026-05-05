@@ -1,6 +1,6 @@
 # Target Speaker Extraction
 
-This project extracts a target speaker from mixed audio using deep learning.
+This project > Extracts a target speaker from noisy multi-speaker audio using deep learning (PyTorch)
 
 ## Features
 - Extracts specific speaker from noisy audio
@@ -19,14 +19,21 @@ python app.py
 
 ## Demo
 
-Input Audio:
-demo/input.wav
+### Input Audio
+[Click to play](demo/input.wav)
 
-Output Audio:
-demo/output.wav
+### Output Audio (Extracted Speaker)
+[Click to play](demo/output.wav)
 
-Input: Mixed audio (multiple speakers)
-Output: Extracted target speaker
+## What happens here?
+
+- Input: Mixed audio containing multiple speakers  
+- Output: Clean audio of the target speaker extracted using deep learning model
+
+- ## Results
+
+- Successfully separates target voice from overlapping speech
+- Works on short audio samples (~5–10 sec)
 
 ## Note
 Model files (.pt) and pretrained models are excluded due to large size.
